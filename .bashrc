@@ -145,3 +145,4 @@ nvman(){
  nvim "+Man $*" "+only";
 }
 
+alias umlaute='$HOME/.local/bin/toggle-umlaute.sh'
