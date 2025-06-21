@@ -135,6 +135,11 @@ alias dotf-mod=dotfiles-mod
 alias dotfiles-commit='dotfiles add -u && dotfiles commit -m'
 alias dotf-com=dotfiles-commit
 
+# new aliases for opening directories just by name
+open(){
+echo $1;
+}
+
 # alias for opening specified manual page inside of neovim
 nvman(){ 
  nvim "+Man $*" "+only";
