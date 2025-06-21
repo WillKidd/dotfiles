@@ -123,8 +123,16 @@ source "$HOME/.cargo/env"
 source source /home/jan-zimmermann/.bash_completion/alacritty.d/alacritty.bash
 # dotfiles
 alias dotfiles='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-# alias for showing tracked files in dotfiles
+alias dotf=dotfiles
+# aliases for showing tracked files in dotfiles
 alias dotfiles-show='dotfiles ls-tree --name-only --full-tree -r HEAD'
+alias dotf-show=dotfiles-show
+alias dotf-list=dotfiles-show
+# aliases for showing changed files in dotfiles
+alias dotfiles-mod='dotfiles status -uno'
+alias dotf-mod=dotfiles-mod
+# aliases for adding changed files and commiting them
+alias dotfiles-commit='dotfiles add -u && dotfiles commit -m'
 
 nvman(){ 
  nvim "+Man $*" "+only";
