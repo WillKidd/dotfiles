@@ -133,7 +133,9 @@ alias dotfiles-mod='dotfiles status -uno'
 alias dotf-mod=dotfiles-mod
 # aliases for adding changed files and commiting them
 alias dotfiles-commit='dotfiles add -u && dotfiles commit -m'
+alias dotf-com=dotfiles-commit
 
+# alias for opening specified manual page inside of neovim
 nvman(){ 
  nvim "+Man $*" "+only";
 }
